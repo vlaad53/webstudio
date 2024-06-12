@@ -112,42 +112,49 @@ margin-right: 93px;
 
 .hero {
     background-color: var(--footer-bcg);
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    text-align: center;
 }
 
 
 .hero-title {
     color:var(--main-background-color);
-text-align: center;
 font-size: 44px;
 font-weight: 900;
 line-height: 1.36; /* 136.364% */
 letter-spacing: 2.64px;
 text-transform: uppercase;
-margin-top: 94px;
-margin-bottom: 94px;
 width: 644px;
-margin-left: 255px;
+margin-bottom: 30px;
+margin-left: auto;
+margin-right: auto;
 }
 
 
 .hero-btm {
-    color:var(--main-background-color);
-text-align: center;
+color:var(--main-background-color);
 font-size: 16px;
-font-style: normal;
 font-weight: 700;
 line-height: 30px; /* 187.5% */
 letter-spacing: 0.96px;
-width: 216px;
-height: 50px;
 flex-shrink: 0;
-border-radius: 4px;
+border-radius: 6px;
 background: var(--accent-color);
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-margin-left: 468px;
+margin-left: auto;
+margin-right: auto;
+padding-left: 32px;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-right: 32px;
 }
+
+
+.advantages {
+    padding-top: 94px;
+}
+
 
 .advantages-list {
     display: flex;
@@ -165,8 +172,6 @@ margin-left: 468px;
     color: var(--logo-color);
 }
 
-
-
 .advantages-title {
     color:var(--text-color);
 font-size: 14px;
@@ -175,6 +180,7 @@ line-height: 1.14;
 letter-spacing: 0.42px;
 text-transform: uppercase;
 }
+
 .advantages-desk {
     color:var(--description-color);
 font-size: 14px;
@@ -194,7 +200,6 @@ margin-top: 10px;
 .work-list {
     display: flex;
     gap: 30px;
-    margin-top: 50px;
 }
 
 .work-tittle {
@@ -206,6 +211,7 @@ line-height: 1.16;
 letter-spacing: 1.08px;
 margin-bottom: 50px;
 }
+
 .team {
     background-color: var(--bcgwhite);
     padding-top: 94px;
@@ -245,6 +251,11 @@ font-size: 16px;
 font-weight: 400;
 line-height: 1.18;
 letter-spacing: 0.48px;
+}
+
+.bok {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .footer {
