@@ -61,6 +61,8 @@ letter-spacing: 0.78px;
 
 .header {
     background-color: var(--main-background-color);
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .header-list {
@@ -130,10 +132,9 @@ letter-spacing: 0.28px;
 
 .btn-list {
     display: flex;
-    margin-top: 126px;
-    margin-bottom: 56px;
+    margin-bottom: 50px;
     gap: 8px ;
-    margin-left: 288px;
+    justify-content: center;
 }
 
 .btn-btn:hover {
@@ -151,6 +152,16 @@ line-height: 26px;
 letter-spacing: 0.48px;
 padding:6px 22px ;
 border-radius: 4px;
+border: none;
+}
+
+.card {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.card-wrap {
+    padding: 20px 24px;
 }
 
 .card-list {
@@ -159,12 +170,22 @@ border-radius: 4px;
     gap: 30px;
 }
 
+.card-item {
+    flex-basis: calc((100% - 60px) / 3);
+    border: 1px solid #EEE;
+}
+
+.card-img {
+    width: 100%;
+}
+
 .card-title {
     color: var(--text-color);
     font-size: 18px;
     font-weight: 700;
     line-height: 36px; 
     letter-spacing: 1.08px;
+    margin-bottom: 4px;
 }
 
 .card-desk {
