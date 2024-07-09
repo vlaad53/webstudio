@@ -115,13 +115,14 @@ color: var(--accent-color);
     }
 
 
-.hero {
-    background-color: var(--footer-bcg);
-    padding-top: 94px;
-    padding-bottom: 94px;
-    text-align: center;
-}
-
+    .hero {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        text-align: center;
+         background-image: linear-gradient( rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../images/fons.jpg.jpg);
+         background-repeat: no-repeat;
+         background-size: cover;
+      }
 
 .hero-title {
     color:var(--main-background-color);
@@ -265,6 +266,8 @@ margin-bottom: 50px;
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: var(--main-background-color);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
 }
 
 .team-img {
