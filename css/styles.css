@@ -124,7 +124,7 @@ margin-right: 93px;
     height: 12px;
 }
 
-.header-item:nth-child(2) .header-cont {
+.header-item:nth-child(2) .header-contact {
     width: 10px;
     height: 16px;
 }
@@ -143,10 +143,7 @@ letter-spacing: 0.28px;
 
 .header-cont:hover {
     fill: #2196F3;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.28px;
+    
 }
 
 
@@ -236,7 +233,6 @@ background-image: url(../images/astronaut.png);
 .nav-list {
     display: flex;
     gap: 50px;
-    margin-right: 305px;
 }
 
 .nav-lank {
