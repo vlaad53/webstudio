@@ -332,6 +332,82 @@ letter-spacing: 0.48px;
 }
 
 
+.team-svg {
+    width: 20px;
+    height: 20px;
+    fill: 
+    #AFB1B8;
+}
+
+
+
+.team-contacts {
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+  margin-top: 16px;
+}
+
+.team-link:hover {
+    background-color: var(--accent-color);
+    .team-svg {
+        fill: var(--main-background-color);
+    }
+}
+
+.team-link {
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.ger-tittle {
+    color: #212121;
+text-align: center;
+font-size: 36px;
+font-weight: 700;
+letter-spacing: 1.08px;
+margin-top: 94px;
+}
+
+
+.ger-svg {
+width: 106px;
+height: 60px;
+fill: 
+#AFB1B8;
+}
+
+.client-link {
+    padding: 16px 32px;
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-link:hover {
+    border-color: var(--accent-color);
+    .ger-svg {
+        fill: var(--accent-color);
+    }
+}
+
+.ger-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 94px;
+    margin-top: 50px;
+}
+
 
 
 .footer {
@@ -384,4 +460,44 @@ font-size: 14px;
 font-weight: 400;
 line-height: 1.71; /* 171.429% */
 letter-spacing: 0.42px;
+}
+
+.footer-box {
+    display: flex;
+    gap: 70px;
+}
+
+
+.footer-tittle {
+color: #FFF;
+font-size: 14px;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+}
+
+.footer-spes {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.footer-li {
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.10);
+    border-radius: 50%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.footer-li:hover {
+    background-color: var(--accent-color);
+}
+
+.footer-svg {
+    width: 20px;
+height: 20px;
+fill: var(--main-background-color);
 }
