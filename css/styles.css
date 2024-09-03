@@ -193,6 +193,7 @@ padding-left: 32px;
 padding-top: 10px;
 padding-bottom: 10px;
 padding-right: 32px;
+border: none;
 }
 
 
@@ -264,14 +265,10 @@ margin-top: 10px;
 }
 
 
-.work-position-item {
-    position: relative;
-}
+
 
 .work-position {
 background-image: url(../images/bckg.png);
-width: 370px;
-height: 70px;
 color: #FFF;
 text-align: center;
 font-size: 14px;
@@ -280,14 +277,13 @@ line-height: normal;
 letter-spacing: 0.42px;
 text-transform: uppercase;
 position: absolute;
-bottom: 0px;
+padding: 27px 107px;
+top: 1430px;
 }
 
 
 .work-posit {
 background-image: url(../images/bckg.png);
-width: 370px;
-height: 70px;
 color: #FFF;
 text-align: center;
 font-size: 14px;
@@ -296,14 +292,12 @@ line-height: normal;
 letter-spacing: 0.42px;
 text-transform: uppercase;
 position: absolute;
-left: 400px;
-bottom: 0px;
+padding: 27px 113px;
+top: 1430px;
 }
 
 .work-pos {
 background-image: url(../images/bckg.png);
-width: 370px;
-height: 70px;
 color: #FFF;
 text-align: center;
 font-size: 14px;
@@ -312,8 +306,8 @@ line-height: normal;
 letter-spacing: 0.42px;
 text-transform: uppercase;
 position: absolute;
-left: 800px;
-bottom: 0px;
+padding: 27px 95px;
+top: 1430px;
 }
 
 
@@ -522,38 +516,38 @@ letter-spacing: 0.42px;
 
 
 .footer-tittle {
-color: #FFF;
-font-size: 14px;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 0.42px;
-text-transform: uppercase;
-}
-
-.footer-spes {
-    display: flex;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.footer-li {
-    padding: 12px;
-    background-color: rgba(255, 255, 255, 0.10);
-    border-radius: 50%;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-}
-
-.footer-li:hover {
-    background-color: var(--accent-color);
-}
-
-.footer-svg {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    }
+    
+    .footer-spes {
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    
+    .footer-li {
+        padding: 12px;
+        background-color: rgba(255, 255, 255, 0.10);
+        border-radius: 50%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    
+    .footer-li:hover {
+        background-color: var(--accent-color);
+    }
+    
+    .footer-svg {
     width: 20px;
-height: 20px;
-fill: var(--main-background-color);
-}
+    height: 20px;
+    fill: var(--main-background-color);
+    }
 
 
 .backdrop {
