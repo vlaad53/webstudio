@@ -248,3 +248,43 @@ font-weight: 400;
 line-height: 1.71; 
 letter-spacing: 0.42px;
 }
+
+
+
+
+
+
+.footer-tittle {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    }
+    
+    .footer-spes {
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    
+    .footer-li {
+        padding: 12px;
+        background-color: rgba(255, 255, 255, 0.10);
+        border-radius: 50%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    
+    .footer-li:hover {
+        background-color: var(--accent-color);
+    }
+    
+    .footer-svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--main-background-color);
+    }
+    
