@@ -13,11 +13,11 @@
 <body>
   <header class="header">
     <div class="container box">
-    <a href="index.html" class="header-logo"><span class="logo-color">Web</span>Studio</a>
+    <a href="./index.html" class="header-logo"><span class="logo-color">Web</span>Studio</a>
   <nav class="header-nav">
     <ul class="nav-list">
-    <li class="nav-item"><a href="./index.html" class="nav-lank">Студія</a></li>
-    <li class="nav-item"><a href="pages/portfolio.html" class="nav-lank">Портфоліо</a></li>
+    <li class="nav-item"><a href="./index.html" class="nav-lank active">Студія</a></li>
+    <li class="nav-item"><a href="./pages/portfolio.html" class="nav-lank">Портфоліо</a></li>
    <li class="nav-item"><a href="#" class="nav-lank">Контакти</a></li>
   </ul>
   </nav>
@@ -32,7 +32,7 @@
     <section class="hero">
       <div class="container">
         <h1 class="hero-title">EФЕКТИВНЕ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-        <button type="button" class="hero-btm">Замовити послугу</button>
+        <button type="button" data-modal-open class="hero-btm">Замовити послугу</button>
       </div>
       </section>
       <!-- секция2 -->
@@ -171,30 +171,47 @@
     </div>
   </div>
   </footer>
-  <!-- <div class="backdrop">
-<div class="modal">
-  <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
-  <form class="modal-form">
-    <div class="modal-box">
-      <label class="modal-label">Ім'я
-        <input class="modal-input" type="text" required minlength="3" maxlength="20">
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+    <button type="button" data-modal-close class="modal-close">
+      <svg class="close-icon">
+        <use href="./images/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h3 class="modal-tittle">Залиште свої дані, ми вам передзвонимо</h3>
+    <form class="modal-form">
+      <label class="form-label">Ім'я
+        <input type="text" required class="form-input">
+        <svg class="input-icon">
+          <use href="./images/symbol-defs.svg#icon-person"></use>
+        </svg>
       </label>
-      <svg class="modal-svg" width="22" height="22"><use href="./images/symbol-defs.svg#icon-person"></use></svg>
-      <label class="modal-label-two">Телефон
-        <input class="modal-input-two" type="number" required minlength="3" maxlength="20">
+      <label class="form-label">Телефон
+        <input type="tel" required class="form-input">
+        <svg class="input-icon">
+          <use href="./images/symbol-defs.svg#icon-phone"></use>
+        </svg>
       </label>
-      <svg class="modal-svg-two" width="22" height="22"><use href="./images/symbol-defs.svg#icon-phone"></use></svg>
-      <label class="modal-label-three">Пошта
-        <input class="modal-input-three" type="email" required minlength="3" maxlength="20">
+      <label class="form-label">Пошта
+        <input type="email" required class="form-input">
+        <svg class="input-icon">
+          <use href="./images/symbol-defs.svg#icon-email"></use>
+        </svg>
       </label>
-      <svg class="modal-svg-three" width="22" height="22"><use href="./images/symbol-defs.svg#icon-email"></use></svg>
-      <label class="model-label-fort">Коментар
-        <textarea name="Коментар" class="model-com"></textarea>
+      <label class="form-label">Коментар
+        <textarea name="comment" placeholder="Введіть текст" class="form-comment"></textarea>
       </label>
+      <div class="check-wrap">
+      <label class="check-box">
+        <input type="checkbox" class="check">
+        <p class="form-text">Погоджуюся з розсилкою та приймаю</p>
+      </label>
+      <a href="#" class="form-link">Умови договору</a>
     </div>
-  </form>
-</div>
+      <button type="submit" class="form-btn">Відправити</button>
+    </form>
+    </div>
   </div>
-  <script src="./js/modal.js"></script> -->
-</body>
-</html>
+      <script src="./js/modal.js"></script> 
+    </body>
+    </html>
