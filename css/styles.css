@@ -596,7 +596,27 @@ padding: 40px;
     justify-content: center;
     align-items: center;
     border: 1px solid rgba(0, 0, 0, 0.10);;
+    background-color: transparent;
 }
+
+.modal-close:hover>.close-icon {
+    fill: var(--accent-color);
+    cursor: pointer;
+    outline: 1px solid var(--accent-color);
+}
+
+.modal-close:focus {
+    border: none;
+    outline: 1px solid rgba(0, 0, 0, 0.10);;
+    .close-icon {
+        fill: var(--accent-color);
+        cursor: pointer;
+        
+    }
+}
+
+
+
 
 .close-icon {
 width: 18px;
@@ -662,6 +682,22 @@ font-weight: 400;
 line-height: 1.16;
 letter-spacing: 0.12px;
 position: relative;
+}
+
+.form-label:focus {
+    .input-icon {
+        fill: var(--accent-color);
+    }
+   }
+
+.form-label:hover {
+ .input-icon {
+    fill: var(--accent-color);
+ }
+ .form-input {
+    border: none;
+    outline: 1px solid var(--accent-color);
+ }
 }
 
 .form-btn {
