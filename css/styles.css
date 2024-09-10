@@ -97,6 +97,19 @@ margin-right: 93px;
     color: var(--accent-color);
 }
 
+.active::after {
+content: "";
+display: block; 
+border-radius: 2px;
+background: #2196F3;
+width: 48px;
+height: 4px;
+margin-top: 28px;
+position: absolute;
+top: 47px;
+}
+
+
 .header-number {
     color: var(--description-color);
 }
@@ -527,6 +540,7 @@ letter-spacing: 0.42px;
     line-height: normal;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+    margin-top: 12px;
     }
     
     .footer-spes {
@@ -552,6 +566,51 @@ letter-spacing: 0.42px;
     width: 20px;
     height: 20px;
     fill: var(--main-background-color);
+    }
+
+    .footer-input {
+        width: 358px;
+        height: 50px;
+        background: #2F303A;
+        border-radius: 4px;
+border: 1px solid rgba(255, 255, 255, 0.30);
+background: rgba(33, 150, 243, 0.00);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+margin-top: 20px;
+margin-right: 12px;
+margin-left: 43px;
+padding-left: 18px;
+    }
+
+    .footer-tittle-form {
+color: #FFF;
+font-size: 14px;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+margin-left: 45px;
+margin-top: 12px;
+    }
+
+    .footer-vecto {
+color: #FFF;
+text-align: center;
+font-size: 16px;
+font-weight: 700;
+line-height: 30px;
+letter-spacing: 0.96px;
+background-color: var(--accent-color);
+width: 200px;
+height: 50px;
+border: none;
+border-radius: 4px;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+    }
+
+    .div-box {
+        display: block;
     }
 
 
