@@ -1,0 +1,100 @@
+.comand {
+    background-color: $comand-color;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    text-align: center;
+  
+    &__list {
+      display: flex;
+      gap: 30px;
+      max-width: 1200px;
+    }
+  
+    &__item {
+      border-radius: 0px 0px 4px 4px;
+      box-shadow: 
+        0px 1px 3px 0px rgba(0, 0, 0, 0.12), 
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
+        0px 2px 1px 0px rgba(0, 0, 0, 0.20);
+    }
+  
+    &__box {
+      border-radius: 0px 0px 4px 4px;
+      background: $studio-color;
+      width: 270px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  
+    &__img {
+      width: 270px;
+    }
+  
+    &__title {
+      color: $text-color;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1.16;
+      margin-bottom: 50px;
+      letter-spacing: 1.08px;
+    }
+  
+    &__description {
+      color: $text-color;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.18;
+    }
+  
+    &__text {
+      color: $accent-color;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.18;
+      margin-top: 10px;
+      margin-bottom: 16px;
+    }
+  
+    &__leest {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  &__eatem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+  
+    &:hover,
+    &:focus {
+      outline: $web-color;
+      border-radius: 50%;
+      background-color: $web-color;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+      .comand__icon {
+        fill: $affairs-color;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        animation: move-box 250ms ease;
+      }
+    }
+  }
+  
+  @keyframes move-box {
+  0% {
+  transform: rotate(0);
+  }
+  100% {
+  transform: rotate(360deg);
+  }
+  }
+  
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: $svg-color;
+  }
+  }
