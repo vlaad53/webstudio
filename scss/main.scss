@@ -1,6 +1,8 @@
 @import "./base/common";
 @import "./base/container";
 @import "./base/reset";
+@import "./utils/placeholder.scss";
+@import "./utils/mixin.scss";
 @import "./base/variables";
 @import "./section/advantages";
 @import "./section/affairs";
@@ -11,4 +13,5 @@
 @import "./section/header";
 @import "./section/hero";
 @import "./section/photo";
+
 
