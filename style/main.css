@@ -514,8 +514,8 @@ button {
   background-image: url(../images/antenna.png);
   height: 120px;
   display: block;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
   margin-bottom: 30px;
 }
 @media screen and (min-width: 480px) {
@@ -890,8 +890,8 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .footer__logo {
-    font-size: 26px;
     letter-spacing: 0.78px;
+    font-size: 26px;
   }
 }
 .footer__web {
