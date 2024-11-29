@@ -1,100 +1,123 @@
 .comand {
-    background-color: $comand-color;
-    padding-top: 94px;
-    padding-bottom: 94px;
-    text-align: center;
-  
-    &__list {
-      display: flex;
-      gap: 30px;
-      max-width: 1200px;
+  background-color: $comand-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+
+      @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
     }
-  
-    &__item {
-      border-radius: 0px 0px 4px 4px;
-      box-shadow: 
-        0px 1px 3px 0px rgba(0, 0, 0, 0.12), 
-        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
-        0px 2px 1px 0px rgba(0, 0, 0, 0.20);
-    }
-  
-    &__box {
-      border-radius: 0px 0px 4px 4px;
-      background: $studio-color;
-      width: 270px;
-      padding-top: 30px;
-      padding-bottom: 30px;
-    }
-  
-    &__img {
-      width: 270px;
-    }
-  
-    &__title {
-      color: $text-color;
-      font-size: 36px;
-      font-weight: 700;
-      line-height: 1.16;
-      margin-bottom: 50px;
-      letter-spacing: 1.08px;
-    }
-  
-    &__description {
-      color: $text-color;
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 1.18;
-    }
-  
-    &__text {
-      color: $accent-color;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 1.18;
-      margin-top: 10px;
-      margin-bottom: 16px;
-    }
-  
-    &__leest {
+
+  &__list {
     display: flex;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+
+      @media screen and (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+      @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+    }
   }
-  
-  &__eatem {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 12px;
-  
-    &:hover,
-    &:focus {
-      outline: $web-color;
-      border-radius: 50%;
-      background-color: $web-color;
-      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
-      .comand__icon {
-        fill: $affairs-color;
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        animation: move-box 250ms ease;
+
+  &__item {
+     flex-basis: calc(100%);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 
+      0px 1px 3px 0px rgba(0, 0, 0, 0.12), 
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
+      0px 2px 1px 0px rgba(0, 0, 0, 0.20);
+       @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 30px) / 2);
       }
+      @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 90px) / 4);
+      }
+  }
+
+  &__box {
+    border-radius: 0px 0px 4px 4px;
+    background: $studio-color;
+    padding-top: 30px;
+    padding-bottom: 36px;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__title {
+    color: $text-color;
+       text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: 0.84px;
+    margin-bottom: 30px;
+
+     @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      letter-spacing: 1.08px;
+      margin-bottom: 50px;
+     }
+  }
+
+  &__description {
+    color: $text-color;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.18;
+  }
+
+  &__text {
+    color: $accent-color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.18;
+    margin-top: 10px;
+    margin-bottom: 16px;
+  }
+
+  &__leest {
+  @include flex-box($c: flex-start, $d: flex-start);
+  gap: 10px;
+}
+
+&__eatem {
+@include flex-box($c: flex-start, $d: flex-start);
+  padding: 12px;
+
+  &:hover,
+  &:focus {
+    outline: $web-color;
+    border-radius: 50%;
+    background-color: $web-color;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .comand__icon {
+      fill: $affairs-color;
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      animation: move-box 250ms ease;
     }
   }
-  
-  @keyframes move-box {
-  0% {
-  transform: rotate(0);
-  }
-  100% {
-  transform: rotate(360deg);
-  }
-  }
-  
-  &__icon {
-    width: 20px;
-    height: 20px;
-    fill: $svg-color;
-  }
-  }
+}
+
+@keyframes move-box {
+0% {
+transform: rotate(0);
+}
+100% {
+transform: rotate(360deg);
+}
+}
+
+&__icon {
+  width: 20px;
+  height: 20px;
+  fill: $svg-color;
+}
+}

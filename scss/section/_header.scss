@@ -2,21 +2,7 @@
     background-color: $affairs-color;
     padding-top: 24px;
     padding-bottom: 25px;
-
-    @media screen and (min-width: 480px) {
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
-  
-    @media screen and (min-width: 768px) {
-      padding-top: 21px;
-      padding-bottom: 21px;
-    }
-  
-    @media screen and (min-width: 1200px) {
-      padding-top: 25px;
-      padding-bottom: 25px;
-    }
+}
   
   
     &__logo {
@@ -44,7 +30,7 @@
   
   }
   
-  }
+  
   
     &__web {
     color: $web-color;
