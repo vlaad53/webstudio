@@ -14,18 +14,19 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style/main.css"/>
   </head>
   <body>
     <header class="header">
       <div class="container box">
         <a class="header__logo" href="/index.html"
-          ><span class="header__web">Web</span>Studio</a
-        >
+          ><span class="header__web">Web</span>Studio</a>
+          <button type="button" class="header__btn" modal-header-open>
+            <svg class="header__eacon">
+            <use href="./images/symbol-defs.svg#icon-menu"></use>
+            </svg>
+            </button>
         <nav class="header__nav">
           <ul class="nav__list">
             <li class="nav__item">
@@ -57,6 +58,28 @@
             >
           </li>
         </ul>
+        <div class="menu is-hidden" header-modal>
+          <button type="button" class="menu__btn" modal-header-close><svg class="menu__icon">
+            <use href="./images/symbol-defs.svg#icon-dagger"></use>
+          </svg></button>
+          <nav class="menu-nav">
+          <ul class="menu__list">
+            <li class="menu__item"><a href="./index.html" class="menu__link activ">Студія</a></li>
+            <li class="menu__item"><a href="./pages/portfolio.html" class="menu__link">Портфоліо</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Контакти</a></li>
+          </ul>
+          </nav>
+          <ul class="menu__leest">
+            <li class="menu__eetem"><a href="tel:+380961111111" class="menu__lienk">+38 096 111 11 11</a></li>
+            <li class="menu__eetem"><a href="mailto:info@devstudio.com" class="menu__leenk">info@devstudio.com</a></li>
+          </ul>
+          <ul class="menu__least">
+            <li class="menu__eatem"><a href="https://www.instagram.com/" class="menu__leank first">Instagram</a></li>
+            <li class="menu__eatem"><a href="https://twitter.com/?lang=uk" class="menu__leank">Twitter</a></li>
+            <li class="menu__eatem"><a href="https://www.facebook.com/?locale=uk_UA" class="menu__leank">Facebook</a></li>
+            <li class="menu__eatem"><a href="https://ua.linkedin.com/" class="menu__leank last">LinkedIn</a></li>
+          </ul>
+        </div>
       </div>
     </header>
     <main class="main">
@@ -447,10 +470,11 @@
     </main>
     <footer class="footer">
       <div class="container footer__box">
-        <div>
+        <div class="adapt">
+          <div class="drop">
           <a class="footer__logo" href="/index.html"
-            ><span class="footer__web">Web</span>Studio</a
-          >
+            ><span class="footer__web">Web</span>Studio</a>
+
           <address class="footer__adress">
             <a
               class="footer__maps"
@@ -599,5 +623,6 @@
     </div>
     
     <script src="./js/modal.js"></script>
+    <script src="./js/modal.header.js"></script>
   </body>
 </html>
