@@ -20,7 +20,6 @@ flex-direction: column;
 
 @media screen and (min-width: 1200px) {
 flex-direction: row;
-text-align: start;
 align-items: baseline;
 }
 }
@@ -44,18 +43,12 @@ margin-right: auto;
 }
 
 .drop {
-margin-right: auto;
-margin-left: auto;
-text-align: center;
-@media screen and (min-width: 768px) {
-margin-left: 0;
-margin-right: 0;
-}   
-@media screen and (min-width: 1200px) {
-text-align: start;
-margin-left: 0;
-margin-right: auto;
-}
+  display: flex;
+  flex-direction: column;
+
+   @media screen and (min-width: 768px) {
+   width: 235px;
+  }
 }
 
 &__logo {
@@ -238,6 +231,9 @@ margin-top: 20px;
 margin-right: 0;
 margin-left: 20px;
 margin-top: auto;
+}
+@media screen and (min-width: 768px) {
+  
 }
 }
 
